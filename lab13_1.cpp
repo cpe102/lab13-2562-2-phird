@@ -21,7 +21,8 @@ void insertionSort(T d[],int N){
 	 }
 	 cout << " => " ;
 	 temp = d[end];
-	 int position=-1;
+	 int position=-1 ;
+	 position= end ;
 	 for( int j=end; j>0 ; j--){
 	  if(d[j]>d[j-1]){
 	  	swap(d,j,j-1);
