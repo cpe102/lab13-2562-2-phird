@@ -15,6 +15,7 @@ void insertionSort(T d[],int N){
  int temp;
  for (int end = 1; end < N; end++)
  {
+//---------------------ไม่เกี่ยว-----------------------------------------------
 	 for(int i = 0;i<N;i++){
 	 	if(i==end) cout << "[" << d[i] << "]";
 	 	else cout << d[i] << " ";	
@@ -22,17 +23,17 @@ void insertionSort(T d[],int N){
 	 cout << " => " ;
 	 temp = d[end];
 	 int position=-1 ;
-	 position= end ;
+/// ----------------------------------ไม่เกี่ยว----------------------------
 	 for( int j=end; j>0 ; j--){
 	  if(d[j]>d[j-1]){
 	  	swap(d,j,j-1);
-		position=j-1;
+		position = j-1;
 	  }
 	 	//else if(j == N-1) break;
 	 }
 	 
 	 for(int k=0;k<N;k++){
-		if(k== position )	 
+		if(k == position )	 
 	 	cout << "[" << d[k] << "]" ;
 	 	else cout << d[k] << " ";
 	 	

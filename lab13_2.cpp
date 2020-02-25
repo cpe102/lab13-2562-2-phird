@@ -35,7 +35,7 @@ void findLocalMax(const double a[][N], bool b[][N])
 {
 	for (int i = 1; i <= 3; i++){
 		for(int j=1;j<=3;j++){
-			if (a[i][j] >= a[i][j-1] and a[i][j] >= a[i][j+1] and a[i][j] > a[i-1][j] and a[i][j] >= a[i+1][j]) 
+			if (a[i][j] >= a[i][j-1] and a[i][j] >= a[i][j+1] and a[i][j] >= a[i-1][j] and a[i][j] >= a[i+1][j]) 
 			{
 			b[i][j]=1;
 			b[i][j-1]=0;
